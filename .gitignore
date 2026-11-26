@@ -1,0 +1,17 @@
+# Secrets: each teammate keeps their own key here (copy .env.example to .env)
+.env
+
+# Rebuilt locally: pip install -r requirements.txt
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Generated while running: LLM response cache and interview results
+.cache/
+results/*
+# The final run is committed so the report's numbers can be regenerated
+!results/reviewed-main-v2-final22/
+
+# Local-only tooling for the question review page
+app/review/
+scripts/export_review_data.py
